@@ -1,0 +1,44 @@
+#First things first, define a weight variable and set it equal to any number.
+
+weight = 1.50
+
+
+#Next, we need to know how much it costs to ship a package of given weight by normal ground shipping based on the “Ground shipping” table above.
+#Write a comment that says “Ground Shipping”.
+#Create an if/elif/else statement for the cost of ground shipping. It should check for weight, and print the cost of shipping a package of that weight.
+
+#Ground Shipping
+if weight <= 2 :
+  cost_ground = weight * 1.50 + 20.00 
+elif weight > 2 and weight <= 6 :
+  cost_ground = weight * 3.00 + 20.00
+elif weight > 6 and weight <= 10 :
+    cost_ground = weight * 4.00 +  20.00
+else:
+  cost_ground = weight * 4.75 + 20.00
+print("Ground Shipping = $", cost_ground)
+
+
+#We’ll also need to make sure we include the price of premium ground shipping in our code. Create a variable for the cost of premium ground shipping.
+#Note: This does not need to be an if statement because the price of premium ground shipping does not change with the weight of the package.
+
+#Ground Shipping Premium 
+cost_ground_premium = 125.00
+print("Ground Shipping Premium = $", cost_ground_premium)
+
+
+#Write a comment for this section of the code, “Drone Shipping”.
+#Create an if/elif/else statement for the cost of drone shipping. This statement should check against weight and print the cost of shipping a package of that weight. 
+
+# Drone Shipping
+
+if weight <= 2 :
+  cost_drone = weight * 4.50 + 0.00
+elif weight > 2 and weight <= 6 :
+  cost_drone = weight * 9.00 + 0.00
+elif weight > 6 and weight <= 10 :
+    cost_drone = weight * 12.00 + 0.00
+else : 
+    cost_drone = weight * 14.25 
+print("Drone Shipping = $", cost_drone)
+
