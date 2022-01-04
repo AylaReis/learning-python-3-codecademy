@@ -1,0 +1,9 @@
+#games = ["Portal", "Minecraft", "Pacman", "Tetris", "The Sims", "Pokemon"]
+#Use sorted() to order games and create a new list called games_sorted.
+
+games_sorted = sorted(games)
+
+#Print both games and games_sorted. How are they different?
+
+print(games)
+print(games_sorted)
